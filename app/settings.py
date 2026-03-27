@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'products',
     'inflows',
     'outflows',
+    'ai',
 ]
 
 LOGIN_URL = 'login'
@@ -165,3 +166,6 @@ SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(days=1),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
 }
+
+OPENAI_MODEL = 'gpt-5.4-nano'
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
